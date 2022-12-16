@@ -1,0 +1,10 @@
+{
+  "name": "notifications-kafka-producer",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "producer.js",
+  "license": "MIT",
+  "dependencies": {
+    "kafkajs": "^2.2.3"
+  }
+}
