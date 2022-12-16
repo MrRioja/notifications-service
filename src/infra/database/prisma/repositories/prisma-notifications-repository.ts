@@ -27,6 +27,9 @@ export class PrismaNotificationsRepository implements NotificationsRepository {
     const notifications = await this.prisma.notification.findMany({
       where: {
         recipientId,
+        AND: {
+          canceledAt: null,
+        },
       },
     });
 
